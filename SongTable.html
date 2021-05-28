@@ -1,0 +1,231 @@
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Song Details</title>
+  
+    <!-- INCLUDING JQUERY-->
+    <script src=
+"https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+  
+    <!-- CSS FOR STYLING THE PAGE -->
+    <style>
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 
+                'Gill Sans MT', ' Calibri', 
+                'Trebuchet MS', 'sans-serif';
+        }
+  
+        td {
+            background-color: #E4F5D4;
+            border: 1px solid black;
+        }
+  
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+  
+        td {
+            font-weight: lighter;
+        }
+    </style>
+</head>
+  
+<body>
+    <section>
+        <h1>Playlist</h1>
+		
+		<!--page size defaulting to 25, but toggleable to 10 or 50-->
+		<h4> Select Page Size </h4>
+		<button type="button" data-page-size="10">10</button>
+		<button type="button" data-page-size="20">25</button>
+		<button type="button" data-page-size="50">50</button>
+		
+		<!--Search textbox-->
+		<input type="text" id="serchText" onkeyup="searchFunction()" placeholder="Search for names..">
+  
+        <!-- TABLE CONSTRUCTION-->
+		
+		<!-- Setting page size default to 25 entries-->
+        <table id='table' data-page-length='25'>
+            <!-- HEADING FORMATION -->
+            <tr>
+                <th onclick="sortTable(0)">Song Name</th>
+                <th onclick="sortTable(1)">Album Name</th>
+                <th onclick="sortTable(2)">Lyrics Text</th>
+                <th>Upvote</th>
+				<th>Downvote</th>
+				<th>Edit</th>
+				<th>Delete</th>
+            </tr>
+  
+            <script>
+			    $(document).ready(function () {
+  
+                    // FETCHING DATA FROM JSON FILE
+                    $.getJSON("songdetails.json", 
+                            function (data) {
+                        var song = '';
+  
+                        // ITERATING THROUGH OBJECTS
+                        $.each(data, function (key, value) {
+  
+                            //CONSTRUCTION OF ROWS HAVING
+                            // DATA FROM JSON OBJECT
+                            song += '<tr>';
+                            song += '<td>' + 
+                                value.song_name + '</td>';
+  
+                            song += '<td>' + 
+                                value.album_name + '</td>';
+  
+                            song += '<td>' + 
+                                value.lyric_text + '</td>';
+  
+                            song += '<td>' + 
+                                value.upvote + '</td>';
+								
+							song += '<td>' + 
+                                value.downvote + '</td>';
+								
+							song += '<td>' +
+								'<button type="button" onclick="productDisplay(this);" class="btn btn-default">' +
+								'<span class="glyphicon glyphicon-edit" />' +
+								'</button>' +
+								'</td>' ;
+								
+							 song += '<td>' +
+								'<button type="button" onclick="productDelete(this);" class="btn btn-default">' +
+								'<span class="glyphicon glyphicon-remove" />' +
+								'</button>' +
+								'</td>' ;
+  
+                            song += '</tr>';
+                        });
+                          
+                        //INSERTING ROWS INTO TABLE 
+                        $('#table').append(song);
+                    });
+                });
+				
+		// page size defaulting to 25, but toggleable to 10 or 50
+		$('[data-page-size]').on('click', function(e){
+			e.preventDefault();
+			var newSize = $(this).data('pageSize');
+			FooTable.get('#table').pageSize(newSize);
+		});		
+		
+		//searching
+		function searchFunction() {
+			  // Declare variables
+			  var input, filter, table, tr, td, i, txtValue;
+			  input = document.getElementById("serchText");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("table");
+			  tr = table.getElementsByTagName("tr");
+
+			  // Loop through all table rows, and hide those who don't match the search query
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  txtValue = td.textContent || td.innerText;
+				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				}
+			  }
+			}
+					
+		//sorting table
+ 		function sortTable(n) {
+		  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+		  table = document.getElementById("table");
+		  switching = true;
+		  // Set the sorting direction to ascending:
+		  dir = "asc";
+		  /* Make a loop that will continue until
+		  no switching has been done: */
+		  while (switching) {
+			// Start by saying: no switching is done:
+			switching = false;
+			rows = table.rows;
+			/* Loop through all table rows (except the
+			first, which contains table headers): */
+			for (i = 1; i < (rows.length - 1); i++) {
+			  // Start by saying there should be no switching:
+			  shouldSwitch = false;
+			  /* Get the two elements you want to compare,
+			  one from current row and one from the next: */
+			  x = rows[i].getElementsByTagName("TD")[n];
+			  y = rows[i + 1].getElementsByTagName("TD")[n];
+			  /* Check if the two rows should switch place,
+			  based on the direction, asc or desc: */
+			  if (dir == "asc") {
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+				  // If so, mark as a switch and break the loop:
+				  shouldSwitch = true;
+				  break;
+				}
+			  } else if (dir == "desc") {
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+				  // If so, mark as a switch and break the loop:
+				  shouldSwitch = true;
+				  break;
+				}
+			  }
+			}
+			if (shouldSwitch) {
+			  /* If a switch has been marked, make the switch
+			  and mark that a switch has been done: */
+			  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+			  switching = true;
+			  // Each time a switch is done, increase this count by 1:
+			  switchcount ++;
+			} else {
+			  /* If no switching has been done AND the direction is "asc",
+			  set the direction to "desc" and run the while loop again. */
+			  if (switchcount == 0 && dir == "asc") {
+				dir = "desc";
+				switching = true;
+			  }
+			}
+		  }
+		}
+	
+		//edit button
+		function productDisplay(ctl) {
+			_row = $(ctl).parents("tr");
+			var cols = _row.children("td");
+			$("#song_name").val($(cols[1]).text());
+			$("#album_name").val($(cols[2]).text());
+			$("#lyric_text").val($(cols[3]).text());
+			
+			$("#updateButton").text("Update");
+		}
+	
+		//delete button
+		function productDelete(ctl) {
+			$(ctl).parents("tr").remove();
+		}
+	
+	</script>
+	</section>
+</body>
+  
+</html>

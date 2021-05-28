@@ -1,0 +1,368 @@
+Songs:[{
+	"id": "1",
+	"song_name": "AA",
+	"album_name" : "Album_AA",
+	"lyric_text" : "lyrics_AA",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "2",
+	"song_name": "BB",
+	"album_name" : "Album_BB",
+	"lyric_text" : "lyrics_BB",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "3",
+	"song_name": "CC",
+	"album_name" : "Album_CC",
+	"lyric_text" : "lyrics_CC",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "4",
+	"song_name": "DD",
+	"album_name" : "Album_DD",
+	"lyric_text" : "lyrics_DD",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "5",
+	"song_name": "EE",
+	"album_name" : "Album_EE",
+	"lyric_text" : "lyrics_EE",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "6",
+	"song_name": "FF",
+	"album_name" : "Album_FF",
+	"lyric_text" : "lyrics_FF",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "7",
+	"song_name": "GG",
+	"album_name" : "Album_GG",
+	"lyric_text" : "lyrics_GG",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "8",
+	"song_name": "HH",
+	"album_name" : "Album_HH",
+	"lyric_text" : "lyrics_HH",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "9",
+	"song_name": "II",
+	"album_name" : "Album_II",
+	"lyric_text" : "lyrics_II",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "10",
+	"song_name": "JJ",
+	"album_name" : "Album_JJ",
+	"lyric_text" : "lyrics_JJ",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "11",
+	"song_name": "KK",
+	"album_name" : "Album_KK",
+	"lyric_text" : "lyrics_KK",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "12",
+	"song_name": "LL",
+	"album_name" : "Album_LL",
+	"lyric_text" : "lyrics_LL",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "13",
+	"song_name": "MM",
+	"album_name" : "Album_MM",
+	"lyric_text" : "lyrics_MM",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "14",
+	"song_name": "NN",
+	"album_name" : "Album_NN",
+	"lyric_text" : "lyrics_NN",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "15",
+	"song_name": "OO",
+	"album_name" : "Album_OO",
+	"lyric_text" : "lyrics_OO",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "16",
+	"song_name": "PP",
+	"album_name" : "Album_PP",
+	"lyric_text" : "lyrics_PP",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "17",
+	"song_name": "QQ",
+	"album_name" : "Album_QQ",
+	"lyric_text" : "lyrics_QQ",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "18",
+	"song_name": "RR",
+	"album_name" : "Album_RR",
+	"lyric_text" : "lyrics_RR",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "19",
+	"song_name": "SS",
+	"album_name" : "Album_SS",
+	"lyric_text" : "lyrics_SS",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "20",
+	"song_name": "TT",
+	"album_name" : "Album_TT",
+	"lyric_text" : "lyrics_TT",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "21",
+	"song_name": "UU",
+	"album_name" : "Album_UU",
+	"lyric_text" : "lyrics_UU",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "22",
+	"song_name": "VV",
+	"album_name" : "Album_VV",
+	"lyric_text" : "lyrics_VV",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "23",
+	"song_name": "WW",
+	"album_name" : "Album_WW",
+	"lyric_text" : "lyrics_WW",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "24",
+	"song_name": "XX",
+	"album_name" : "Album_XX",
+	"lyric_text" : "lyrics_XX",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "25",
+	"song_name": "YY",
+	"album_name" : "Album_YY",
+	"lyric_text" : "lyrics_YY",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "26",
+	"song_name": "ZZ",
+	"album_name" : "Album_ZZ",
+	"lyric_text" : "lyrics_ZZ",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "27",
+	"song_name": "A",
+	"album_name" : "Album_A",
+	"lyric_text" : "lyrics_A",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "28",
+	"song_name": "B",
+	"album_name" : "Album_B",
+	"lyric_text" : "lyrics_B",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "29",
+	"song_name": "C",
+	"album_name" : "Album_C",
+	"lyric_text" : "lyrics_C",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "30",
+	"song_name": "D",
+	"album_name" : "Album_D",
+	"lyric_text" : "lyrics_D",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "31",
+	"song_name": "E",
+	"album_name" : "Album_E",
+	"lyric_text" : "lyrics_E",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "32",
+	"song_name": "F",
+	"album_name" : "Album_F",
+	"lyric_text" : "lyrics_F",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "33",
+	"song_name": "G",
+	"album_name" : "Album_G",
+	"lyric_text" : "lyrics_G",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "34",
+	"song_name": "H",
+	"album_name" : "Album_H",
+	"lyric_text" : "lyrics_H",
+	"upvote" : 0,
+	"downvote" : 0
+},
+{
+	"id": "35",
+	"song_name": "I",
+	"album_name" : "Album_I",
+	"lyric_text" : "lyrics_I",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "36",
+	"song_name": "J",
+	"album_name" : "Album_J",
+	"lyric_text" : "lyrics_J",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "37",
+	"song_name": "K",
+	"album_name" : "Album_K",
+	"lyric_text" : "lyrics_K",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "38",
+	"song_name": "L",
+	"album_name" : "Album_L",
+	"lyric_text" : "lyrics_L",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "39",
+	"song_name": "M",
+	"album_name" : "Album_M",
+	"lyric_text" : "lyrics_M",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "40",
+	"song_name": "N",
+	"album_name" : "Album_N",
+	"lyric_text" : "lyrics_N",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "41",
+	"song_name": "O",
+	"album_name" : "Album_O",
+	"lyric_text" : "lyrics_O",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "42",
+	"song_name": "P",
+	"album_name" : "Album_P",
+	"lyric_text" : "lyrics_P",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "43",
+	"song_name": "Q",
+	"album_name" : "Album_Q",
+	"lyric_text" : "lyrics_Q",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "44",
+	"song_name": "R",
+	"album_name" : "Album_R",
+	"lyric_text" : "lyrics_R",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "45",
+	"song_name": "S",
+	"album_name" : "Album_S",
+	"lyric_text" : "lyrics_S",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "46",
+	"song_name": "T",
+	"album_name" : "Album_T",
+	"lyric_text" : "lyrics_T",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "47",
+	"song_name": "U",
+	"album_name" : "Album_U",
+	"lyric_text" : "lyrics_U",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "48",
+	"song_name": "V",
+	"album_name" : "Album_V",
+	"lyric_text" : "lyrics_V",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "49",
+	"song_name": "W",
+	"album_name" : "Album_W",
+	"lyric_text" : "lyrics_W",
+	"upvote" : 0,
+	"downvote" : 0
+},{
+	"id": "50",
+	"song_name": "X",
+	"album_name" : "Album_X",
+	"lyric_text" : "lyrics_X",
+	"upvote" : 0,
+	"downvote" : 0
+}]
+	
